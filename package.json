@@ -1,0 +1,24 @@
+{
+    "scripts": {
+        "build": "tsc",
+        "clean": "find queries -type f -name \"*.js\" -delete && find src -type f -name \"*.js\" -delete",
+        "ast": "ts-node common_code/ast/generateASTFile.ts",
+        "ControlledDynamicAccess": "ts-node queries/Dynamic\\ Accesses/Controlled/main.ts",
+        "UncontrolledDynamicAccess": "ts-node queries/Dynamic\\ Accesses/Uncontrolled/main.ts",
+        "ControlledDowncast": "ts-node queries/Downcasts/Controlled/main.ts",
+        "UncontrolledDowncast": "ts-node queries/Downcasts/Uncontrolled/main.ts",
+        "UnionTypePropMod": "ts-node queries/Union-Type\\ Prop\\ Modifications/main.ts",
+        "UnsafeAliasing": "ts-node queries/Uncontrolled\\ Aliasing/main.ts",
+        "CountUnionTypes": "ts-node queries/Toy/CountUnionTypes/main.ts",
+        "CountSums": "ts-node queries/Toy/CountSums/main.ts",
+        "CountObjectTypeUnion": "ts-node queries/Toy/ObjectTypeUnion/main.ts"
+    },
+    "devDependencies": {
+        "@types/node": "^20.12.7"
+    },
+    "dependencies": {
+        "typescript": "5.5.4",
+        "@typescript-eslint/typescript-estree": "^7.8.0",
+        "ts-node": "^10.9.2"
+    }
+}
