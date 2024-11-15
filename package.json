@@ -2,7 +2,7 @@
     "scripts": {
         "build": "tsc",
         "clean": "find queries -type f -name \"*.js\" -delete && find src -type f -name \"*.js\" -delete",
-        "ast": "ts-node common_code/ast/generateASTFile.ts",
+        "ast": "ts-node src/ast/generateASTFile.ts",
         "ControlledDynamicAccess": "ts-node queries/Dynamic\\ Accesses/Controlled/main.ts",
         "UncontrolledDynamicAccess": "ts-node queries/Dynamic\\ Accesses/Uncontrolled/main.ts",
         "ControlledDowncast": "ts-node queries/Downcasts/Controlled/main.ts",
